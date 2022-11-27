@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "https://0fb1-93-84-179-145.eu.ngrok.io/socket.io/?EIO=4&transport=polling&t=OIwbHNn"
+  to = "https://statuesque-lamington-6e57a1.netlify.app/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
