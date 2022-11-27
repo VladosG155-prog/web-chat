@@ -1,6 +1,6 @@
 {
   "name": "front",
-  "proxy": "https://statuesque-lamington-6e57a1.netlify.app/",
+  "proxy": "http://localhost:5003",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

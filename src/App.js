@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { io } from 'socket.io-client';
 import './index.scss';
-const socket = io('https://0fb1-93-84-179-145.eu.ngrok.io', {
-	withCredentials: true,
-	extraHeaders: {
-		'my-custom-header': 'abcd',
-	},
-});
+const socket = io('https://aea8-93-84-179-145.eu.ngrok.io');
 
 function App() {
 	const [message, setMessage] = useState('');
