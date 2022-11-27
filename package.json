@@ -1,6 +1,6 @@
 {
   "name": "front",
-  "proxy": "https://edb5-93-84-179-145.eu.ngrok.io/",
+  "proxy": "https://statuesque-lamington-6e57a1.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

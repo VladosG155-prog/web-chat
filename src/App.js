@@ -6,6 +6,7 @@ const socket = io('https://edb5-93-84-179-145.eu.ngrok.io/', {});
 function App() {
 	const [message, setMessage] = useState('');
 	const [history, setHistory] = useState([]);
+	console.log('123');
 	const sendMessage = (e) => {
 		e.preventDefault();
 		console.log(socket);
