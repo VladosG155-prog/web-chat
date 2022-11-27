@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { io } from 'socket.io-client';
 import './index.scss';
-const socket = io('http://localhost:5003/', {});
+const socket = io('https://edb5-93-84-179-145.eu.ngrok.io/', {});
 
 function App() {
 	const [message, setMessage] = useState('');
