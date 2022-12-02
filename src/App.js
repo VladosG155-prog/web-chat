@@ -1,32 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import './index.scss';
-const socket = io('https://aea8-93-84-179-145.eu.ngrok.io');
-
+const socket = io('https://soft-beans-lie-93-84-185-90.loca.lt/');
 function App() {
 	const [message, setMessage] = useState('');
 	const [history, setHistory] = useState([]);
-	console.log('1234');
+
+	useEffect(() => {
+		socket.on('messageResponse', (data) => setHistory([...history, data]));
+	}, [history]);
+
 	const sendMessage = (e) => {
-		e.preventDefault();
 		console.log(socket);
+		e.preventDefault();
 		if (message) {
-			socket.emit('chat message', message);
+			socket.emit('message', message);
 			setMessage('');
-			const date = new Date();
-			const messageObj = {
-				text: message,
-				createdAt: `${date.getHours()}:${date.getMinutes()}`,
-			};
-			setHistory([...history, messageObj]);
 		}
 	};
-	console.log(history);
 	return (
 		<div className="app">
 			<ul id="messages">
 				{history.map((message) => {
-					return <li className="message">{message.text}</li>;
+					return <li className="message">{message}</li>;
 				})}
 			</ul>
 			<form id="form" action="">

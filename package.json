@@ -1,6 +1,5 @@
 {
   "name": "front",
-  "proxy": "https://aea8-93-84-179-145.eu.ngrok.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
