@@ -12,6 +12,9 @@ function App() {
 
 	const sendMessage = (e) => {
 		console.log(socket);
+		if (message === 'негр') {
+			window.open('https://anime-jutsu.online/4922-devichij-limonad.html');
+		}
 		e.preventDefault();
 		if (message) {
 			socket.emit('message', message);
