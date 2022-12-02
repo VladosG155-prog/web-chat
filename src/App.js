@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import './index.scss';
-const socket = io('https://tender-teeth-type-93-84-185-90.loca.lt');
+const socket = io('https://lucky-ghosts-hope-93-84-185-90.loca.lt');
 function App() {
 	const [message, setMessage] = useState('');
 	const [history, setHistory] = useState([]);
