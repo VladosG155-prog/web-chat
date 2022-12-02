@@ -14,6 +14,8 @@ function App() {
 		console.log(socket);
 		if (message === 'негр') {
 			window.open('https://anime-jutsu.online/4922-devichij-limonad.html');
+		} else if (message === 'дота') {
+			window.open('steam://rungameid/570');
 		}
 		e.preventDefault();
 		if (message) {
